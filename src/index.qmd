@@ -1,8 +1,10 @@
 ---
-title: "src"
+title: "Posts"
 format: html
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome
