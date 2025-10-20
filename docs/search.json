@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "src",
+    "objectID": "posts/10-20-2025Post3.html",
+    "href": "posts/10-20-2025Post3.html",
+    "title": "Post3",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Post 3"
+  },
+  {
+    "objectID": "posts/10-20-2025Post1.html",
+    "href": "posts/10-20-2025Post1.html",
+    "title": "Post 1",
+    "section": "",
+    "text": "This is post 1"
   },
   {
     "objectID": "about.html",
@@ -12,5 +19,19 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "src",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "posts/10-20-2025Post2.html",
+    "href": "posts/10-20-2025Post2.html",
+    "title": "Post2",
+    "section": "",
+    "text": "This is Post2"
   }
 ]
