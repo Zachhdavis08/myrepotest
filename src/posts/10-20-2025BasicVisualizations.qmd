@@ -3,6 +3,9 @@ title: "Basics to Visualizations"
 date: 2025-10-20
 format: html
 editor: visual
+categories:
+  - Visualization
+  - Graphing
 ---
 
 Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and researchers can reveal patterns, trends, and relationships that may be hidden in raw numbers. Common visualization tools include histograms, bar charts, and scatter plots, each suited for different types of data and analyses. This document explores these graphs, their applications, and guidance on when to use them effectively.

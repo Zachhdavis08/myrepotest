@@ -3,6 +3,9 @@ title: "Descriptive Statistics"
 date: 2025-10-20
 format: html
 editor: visual
+categories:
+  - Interpretation
+  - Formula
 ---
 
 While descriptive statistics are a foundational concept, they have broad applications across various fields of statistics, regardless of the data background. These statistics are essential for summarizing and organizing data, providing a clearer understanding of central tendencies, variability, and distribution. Key measures such as mean, median, mode, and standard deviation offer fundamental insights into data patterns and behavior. Despite their simplicity, these measures are often overlooked, yet they play a crucial role in data analysis. When properly utilized, descriptive statistics can uncover trends, highlight inconsistencies (outliers), and provide valuable context for decision-making and deeper statistical exploration. They also serve as a fundamental component of Exploratory Data Analysis (EDA), helping analysts identify patterns before applying more complex techniques.
