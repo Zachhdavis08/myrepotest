@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -132,7 +132,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -167,12 +167,14 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RGF0YSUyMFR5cGVz">Data Types <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rm9ybXVsYQ==">Formula <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R3JhcGhpbmc=">Graphing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJwcmV0YXRpb24=">Interpretation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGlzdGljYWwlMjBUZXN0cw==">Statistical Tests <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VmlzdWFsaXphdGlvbg==">Visualization <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -181,7 +183,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -193,7 +195,7 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome</p>
+<p>Welcome - Test Page</p>
 
 
 
@@ -210,6 +212,13 @@ window.Quarto = {
 <h3 class="no-anchor listing-title">
 <a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">Basics to Visualizations</a>
 </h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">Visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R3JhcGhpbmc='); return false;">Graphing</div>
+
+</div>
 <div class="delink listing-description"><a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
 Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and…
 </a></div>
@@ -232,6 +241,13 @@ Oct 20, 2025
 <h3 class="no-anchor listing-title">
 <a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">Descriptive Statistics</a>
 </h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJwcmV0YXRpb24='); return false;">Interpretation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9ybXVsYQ=='); return false;">Formula</div>
+
+</div>
 <div class="delink listing-description"><a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
 While descriptive statistics are a foundational concept, they have broad applications across various fields of statistics, regardless of the data background. These…
 </a></div>
@@ -254,6 +270,15 @@ Oct 20, 2025
 <h3 class="no-anchor listing-title">
 <a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">Introduction to Data Types</a>
 </h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFR5cGVz'); return false;">Data Types</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljYWwlMjBUZXN0cw=='); return false;">Statistical Tests</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJwcmV0YXRpb24='); return false;">Interpretation</div>
+
+</div>
 <div class="delink listing-description"><a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
 While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is…
 </a></div>
