@@ -1,5 +1,6 @@
 ---
 title: "Basics to Visualizations"
+date: 2025-10-20
 format: html
 editor: visual
 ---

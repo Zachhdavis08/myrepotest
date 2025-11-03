@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Data Types"
+date: 2025-10-20
 format: html
 editor: visual
 ---
