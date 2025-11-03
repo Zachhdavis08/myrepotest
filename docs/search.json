@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "Welcome\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost3\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasics to Visualizations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDescriptive Statistics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Types\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/10-20-2025Post2.html",
@@ -33,5 +33,138 @@
     "title": "Post2",
     "section": "",
     "text": "This is Post2"
+  },
+  {
+    "objectID": "posts/10-20-2025DescrptiveStatistics.html",
+    "href": "posts/10-20-2025DescrptiveStatistics.html",
+    "title": "Descriptive Statistics",
+    "section": "",
+    "text": "While descriptive statistics are a foundational concept, they have broad applications across various fields of statistics, regardless of the data background. These statistics are essential for summarizing and organizing data, providing a clearer understanding of central tendencies, variability, and distribution. Key measures such as mean, median, mode, and standard deviation offer fundamental insights into data patterns and behavior. Despite their simplicity, these measures are often overlooked, yet they play a crucial role in data analysis. When properly utilized, descriptive statistics can uncover trends, highlight inconsistencies (outliers), and provide valuable context for decision-making and deeper statistical exploration. They also serve as a fundamental component of Exploratory Data Analysis (EDA), helping analysts identify patterns before applying more complex techniques."
+  },
+  {
+    "objectID": "posts/10-20-2025DescrptiveStatistics.html#mean-average",
+    "href": "posts/10-20-2025DescrptiveStatistics.html#mean-average",
+    "title": "Descriptive Statistics",
+    "section": "Mean (Average)",
+    "text": "Mean (Average)\nThe mean, also referred to as the average of data, is calculated by summing all data values in a dataset and dividing by the total number of values. It provides a central value for the data and is widely used due to its simplicity in calculating and interpretation. For example, when analyzing the average income of a population, the mean can highlight general economic trends. However, one of the major implications when using the average of a data set is its sensitivity to extreme values (outliers), which can skew the results and provide a misleading representation of a sample population.\n\nFormulas\n\nPopulation Mean\n\\[µ = \\frac{Σx}{N}\\]\nwhere\nis the sum of all values within a population, and\nis the number of observations within a population.\n\n\nSample Mean\nwhere\nis the sum of all values within a sample, and\nis the number of observations within a sample.\nIn general, the sample mean is calculated more frequently in statistics due to the difficulty of obtaining data for an entire population, and since datasets are usually a sample of any given population.\n\n\n\nInterpretation\nInterpreting the mean is very simple; a high mean indicates a high central tendency, while a low mean indicates a lower concentration of values, assuming there are no outliers observed in a set of data."
+  },
+  {
+    "objectID": "posts/10-20-2025DescrptiveStatistics.html#median",
+    "href": "posts/10-20-2025DescrptiveStatistics.html#median",
+    "title": "Descriptive Statistics",
+    "section": "Median",
+    "text": "Median\nThe median is the middle value in a sorted dataset. Unlike the mean, the median is resistant to outliers, making it a better measure of central tendency for skewed data. For instance, in a dataset of home prices, the median provides a more accurate depiction of the typical home cost when a few luxury properties distort the mean.\n\nHow to Calculate by Hand\nArrange the data in ascending order.\nIf the number of observations () is odd, the median is the middle value.\nIf is even, the median is the average of the two middle values.\nIn statistical programming, such as R, the median is often favored for skewed datasets or when outliers are present. Many functions within software default to using the median for robust analysis due to its resistance to extreme values.\n\n\nInterpretation\nThe median reflects the point at which 50% of the data falls below and 50% falls above, which, while it is like the mean, the median provides the exact middle value of the data, disregarding skews and outliers."
+  },
+  {
+    "objectID": "posts/10-20-2025DescrptiveStatistics.html#mode",
+    "href": "posts/10-20-2025DescrptiveStatistics.html#mode",
+    "title": "Descriptive Statistics",
+    "section": "Mode",
+    "text": "Mode\nThe mode is the value that appears most frequently in a dataset. It is particularly useful for categorical data, where calculating a mean or median may not be appropriate. For example, in survey results, the mode can identify the most common preference or choice among respondents. This is also the easiest measure to find, as no calculations are required.\n\nInterpretation\nA data set can be unimodal (one mode), bimodal (two modes), or multimodal (multiple modes). The mode provides insights into the frequency distribution of the data."
+  },
+  {
+    "objectID": "posts/10-20-2025DescrptiveStatistics.html#standard-deviation",
+    "href": "posts/10-20-2025DescrptiveStatistics.html#standard-deviation",
+    "title": "Descriptive Statistics",
+    "section": "Standard Deviation",
+    "text": "Standard Deviation\nThe standard deviation measures the dispersion or spread of data around the mean. A small standard deviation indicates that the data points are close to the mean, while a large standard deviation suggests significant variability.\n\nFormulas\n\nPopulation Standard Deviation:\nwhere\nrepresents the specific elements in a population,\nrepresents the population mean, and\nis the population size.\n\n\nSample Standard Deviation:\nwhere\nrepresents the specific elements in a sample,\nrepresents the sample mean, and\nis the sample size.\nSimilarly to the mean, the sample standard deviation is the more common form, as finding the population standard deviation would be extremely difficult due to the sizes of general populations.\n\n\n\nInterpretation\nA high standard deviation indicates greater variability, which may suggest heterogeneity or diverse elements within a data set. For example, in test scores, a low standard deviation means most students scored similarly, whereas a high standard deviation indicates a wider range of performance levels, which could be due to other existing factors."
+  },
+  {
+    "objectID": "posts/10-20-2025DescrptiveStatistics.html#advanced-uses-and-interpretation",
+    "href": "posts/10-20-2025DescrptiveStatistics.html#advanced-uses-and-interpretation",
+    "title": "Descriptive Statistics",
+    "section": "Advanced Uses and Interpretation",
+    "text": "Advanced Uses and Interpretation\n\nComparing Data Sets\nDescriptive statistics allow researchers to compare data sets effectively. For instance, comparing the means and standard deviations of two groups can highlight significant differences or similarities.\n\n\nIdentifying Trends\nThe mean and standard deviation are often used to track trends over time, such as changes in stock prices or population growth.\n\n\nUnderstanding Data Distributions\nDescriptive measures help identify whether the data follows a normal distribution or exhibits skewness and kurtosis. This understanding is crucial for selecting appropriate statistical tests.\n\n\nQuality Control\nIn manufacturing industries, standard deviation is essential for quality control processes, ensuring product consistency.\nDescriptive statistics serve as the foundation for understanding and interpreting data in any statistical analysis. The mean, median, mode, and standard deviation provide valuable insights into central tendency and variability, making them indispensable tools for summarizing and analyzing data. By mastering these measures, researchers and analysts can uncover meaningful patterns and trends, enabling informed decision-making across various fields."
+  },
+  {
+    "objectID": "posts/10-20-2025IntroToDataTypes.html",
+    "href": "posts/10-20-2025IntroToDataTypes.html",
+    "title": "Introduction to Data Types",
+    "section": "",
+    "text": "While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical."
+  },
+  {
+    "objectID": "posts/10-20-2025IntroToDataTypes.html#categorical-data-qualitative",
+    "href": "posts/10-20-2025IntroToDataTypes.html#categorical-data-qualitative",
+    "title": "Introduction to Data Types",
+    "section": "Categorical Data (Qualitative):",
+    "text": "Categorical Data (Qualitative):\nCategorical data represent characteristics or qualities that are often used to group objects. These values are mostly labels or categories and cannot be measured in a numerical value.\n\nExamples of Categorical Data:\nColor: Red, Blue, Green, etc.\nCity: Philadelphia, New York City, Los Angeles\nBlood Type: A, B, AB, O\nLooking further into categorical data, there are two types: Nominal Data and Ordinal Data. The sole difference between the two is whether they are ordered, with Nominal data following no order while Ordinal Data is ordered.\n\n\nExamples of Nominal Data (No Order):\nMarital Status: Single, Married, Divorced, Widowed\nEye Color: Brown, Green, Blue, Hazel\nCar Brand: Toyota, Subaru, Ford, BMW\n\n\nExamples of Ordinal Data (With Order):\nEducation Level: High School, Associate’s Degree, Bachelor’s Degree, Master’s Degree, Ph.D.\nPain Level: Mild, Moderate, Severe\nJob Performance: Poor, Average, Good, Excellent"
+  },
+  {
+    "objectID": "posts/10-20-2025IntroToDataTypes.html#binary-data",
+    "href": "posts/10-20-2025IntroToDataTypes.html#binary-data",
+    "title": "Introduction to Data Types",
+    "section": "Binary Data",
+    "text": "Binary Data\nThere is also a third type of categorical data, however, is treated as a special case, as it does not fall within the other two types of data. This type is called Binary Data, and it can only take on two possible values, often shown in 0’s and 1’s, which translate to True/False or Yes/No.\n\nExamples of Binary Data:\nLight Switch: On (1), Off (0)\nGender: Male (1), Female (0)\nHas a Driver’s License: Yes (1), No (0)\nPass/Fail: Pass (1), Fail (0)"
+  },
+  {
+    "objectID": "posts/10-20-2025IntroToDataTypes.html#numerical-data-quantitative",
+    "href": "posts/10-20-2025IntroToDataTypes.html#numerical-data-quantitative",
+    "title": "Introduction to Data Types",
+    "section": "Numerical Data (Quantitative):",
+    "text": "Numerical Data (Quantitative):\nNumerical Data are values that represent a measurable quantity. These values can be measured or mathematically manipulated.\n\nExamples of Numerical Data:\nAge (in years): 25, 40, 60, 84\nIncome (USD): 35,000, 50,000, 74,000, 102,000\nWeight (lbs.): 134, 183.4, 200.5, 230.1\nLike Categorical Data, there are also two types of numerical data, these being Discrete and Continuous Data. Discrete Data can only take certain distinct values, typically full integers, and there is no continuity between these values. Continuous data is data that can take any value within a set range.\n\n\nExamples of Discrete Data:\nNumber of Children: 0, 1, 2, 3\nNumber of Pages in a Book: 120, 300, 400, 565\nNumber of Wins of a Sports Teams: 10, 12, 15, 85\n\n\nExamples of Continuous Data:\nHeight (ft.): 5.7, 6.2, 4.11, 7.1\nTemperature (F): 76, 85, 43, 19\nTime (hours): 3.5, 5, 8.2, 12"
+  },
+  {
+    "objectID": "posts/10-20-2025IntroToDataTypes.html#date-and-time-data",
+    "href": "posts/10-20-2025IntroToDataTypes.html#date-and-time-data",
+    "title": "Introduction to Data Types",
+    "section": "Date and Time Data:",
+    "text": "Date and Time Data:\nThese are values that represent points of time or durations. They are often treated slightly differently than categorical and numerical data, but they can still be categorized or measured.\n\nExamples of Time Data:\nDate of Birth: August 11, 2003, 08/11/2003\nEvent Timestamp: 10:32 PM, September 20, 2021\nSubscription Duration: 3 months, 6 months, 1 year\nTime Spent on Website: 15 minutes, 12 seconds"
+  },
+  {
+    "objectID": "posts/10-20-2025IntroToDataTypes.html#statistical-tests-for-data-types",
+    "href": "posts/10-20-2025IntroToDataTypes.html#statistical-tests-for-data-types",
+    "title": "Introduction to Data Types",
+    "section": "Statistical Tests for Data Types:",
+    "text": "Statistical Tests for Data Types:\nIt is important to identify the types of data present, as it acts as a guide to what tests are needed to answer your research questions. In the simplest terms, testing methods can be split up into groups that depend on the combinations of the variable types in the dataset, which can be seen below.\n\n“Why are Data Types Important for Choosing Tests?”\nData types matter in statistical testing because different types of data alter the assumptions, structure, and interpretation of testing and the results that follow. A brief explanation is that numerical data allows for mathematical operations, allowing for the use of tests that require mean and averages, while categorical data relies on tests that measure frequencies or associations. Examples of different tests for each combination of variable types can be found below:\n\n\nNumerical vs. Numerical:\nPearson Correlation:\nMeasures the strength and direction of the linear relationship between two continuous variables.\nSpearman Rank Correlation:\nFor non-linear relationships between two continuous variables.\nLinear Regression:\nTo explore a relationship, using one continuous predictor variable on one response variable.\n\n\nNumerical vs. Categorical (Two Groups):\n\nT-test:\nCompares the means for two groups (control vs. treatment).\nCan be split into two categories:\n\n\nPaired T-test:\nWhen two measurements are taken from the same group.\n\n\nIndependent T-test:\nFor comparing two independent groups.\n\n\nMann-Whitney U Test:\nNon-parametric test for comparing medians of two independent groups when the data is not normally distributed.\n\n\n\nNumerical vs. Categorical (More Than Two Groups):\n\nANOVA (Analysis of Variance):\nTests if there is a significant difference between the means of three or more independent groups.\n\n\nKruskal-Wallis Test:\nNon-parametric alternative to ANOVA for comparing medians across multiple groups.\n\n\nTukey’s HSD:\nFor pairwise comparisons after finding significance in ANOVA testing.\n\n\n\nCategorical vs. Categorical:\nChi-Square Test of Independence: Tests the association between two categorical variables. Fisher’s Exact Test: Alternative to Chi-Square Test, however, intended for smaller sample sizes.\nFor detailed guides on various statistical tests, including their assumptions and implementation in different software programs, click the link below that leads to the Data Learning Center’s Statistical Guides page.\nDLC Statistical Guides (link)"
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html",
+    "href": "posts/10-20-2025BasicVisualizations.html",
+    "title": "Basics to Visualizations",
+    "section": "",
+    "text": "Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and researchers can reveal patterns, trends, and relationships that may be hidden in raw numbers. Common visualization tools include histograms, bar charts, and scatter plots, each suited for different types of data and analyses. This document explores these graphs, their applications, and guidance on when to use them effectively."
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html#histograms",
+    "href": "posts/10-20-2025BasicVisualizations.html#histograms",
+    "title": "Basics to Visualizations",
+    "section": "Histograms:",
+    "text": "Histograms:\nA histogram is a graphical representation that organizes a dataset into intervals or “bins.” Each bin represents a range of values, and its height corresponds to the number of observations within that range. Histograms are particularly useful for understanding the distribution of continuous data.\n\nWhen to Use:\nTo assess the shape of the data distribution (e.g., normal, skewed, or uniform). To detect outliers or unusual data points. To identify multimodal distributions.\n\n\nExample:\nA histogram can be used to analyze the distribution of employee ages in a company. By visualizing age frequencies, patterns such as the concentration of younger employees or a diverse age range may emerge. Below is a created histogram for this scenario:"
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html#bar-charts",
+    "href": "posts/10-20-2025BasicVisualizations.html#bar-charts",
+    "title": "Basics to Visualizations",
+    "section": "Bar Charts:",
+    "text": "Bar Charts:\nA bar chart displays categorical data using rectangular bars. Each bar’s length represents the frequency or proportion of observations in a category. Unlike histograms, bar charts are used for discrete data and do not display intervals.\n\nWhen to Use:\nTo compare counts or proportions across categories. To highlight differences between groups or segments. To visualize survey results or other categorical datasets.\n\n\nExample:\nA bar chart can illustrate the number of students in different academic programs, such as engineering, business, and arts. This visualization helps compare the popularity of each program. The resulting bar chart is provided below:"
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html#scatter-plots",
+    "href": "posts/10-20-2025BasicVisualizations.html#scatter-plots",
+    "title": "Basics to Visualizations",
+    "section": "Scatter Plots:",
+    "text": "Scatter Plots:\nA scatter plot shows the relationship between two continuous variables. Each point represents an observation, with its position determined by the values of the two variables. Scatter plots are particularly effective for identifying correlations or patterns.\n\nWhen to Use:\nTo explore the relationship or correlation between two variables. To detect clusters, trends, or outliers. To evaluate the strength and direction of a relationship.\n\n\nExample:\nA scatter plot can be used to analyze the relationship between marketing spend and sales revenue. A positive trend may suggest that increased marketing efforts lead to higher sales. An example of a scatterplot can be viewed below:"
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html#boxplots",
+    "href": "posts/10-20-2025BasicVisualizations.html#boxplots",
+    "title": "Basics to Visualizations",
+    "section": "Boxplots:",
+    "text": "Boxplots:\nA boxplot is a graphical representation of the distribution of a dataset. It summarizes key statistics, including the median, quartiles, and potential outliers. The box represents the interquartile range (IQR), while the whiskers extend to the smallest and largest non-outlier values.\n\nWhen to Use:\nTo visualize the spread and variability of data. To detect outliers in a dataset. To compare distributions across multiple groups.\n\n\nExample:\nA boxplot can be used to analyze the distribution of salaries in different job departments. By comparing salary distributions in IT, HR, Finance, and other departments, companies can assess pay disparities and variations within teams. A side-by-side boxplot of this scenario is shown below:"
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html#line-graphs",
+    "href": "posts/10-20-2025BasicVisualizations.html#line-graphs",
+    "title": "Basics to Visualizations",
+    "section": "Line Graphs:",
+    "text": "Line Graphs:\nA line graph effectively visualizes trends over time by connecting data points with a continuous line, making it easier to identify patterns, fluctuations, and long-term changes. While like a scatter plot, a line graph is particularly useful for highlighting trends and showing the progression of data over time. However, line graphs have a more specialized use and are most relevant in specific areas of statistical analysis, such as time-series data and trend forecasting.\n\nWhen to Use:\nTo track changes over a period (e.g., daily, monthly, and yearly trends). To compare multiple trends in a single graph. To identify seasonal patterns or cyclical behavior.\n\n\nExample:\nA line graph can be used to analyze monthly sales revenue over a year. By plotting sales data for each month, businesses can identify peak seasons, declining trends, or the impact of marketing campaigns. Below is a line graph of our scenario:"
+  },
+  {
+    "objectID": "posts/10-20-2025BasicVisualizations.html#choosing-the-right-graph",
+    "href": "posts/10-20-2025BasicVisualizations.html#choosing-the-right-graph",
+    "title": "Basics to Visualizations",
+    "section": "Choosing the Right Graph:",
+    "text": "Choosing the Right Graph:\nSelecting the appropriate graph depends on the nature of your data and the insights you want to gain:\nHistograms – Best for understanding distributions and variability within a single dataset.\nBar Charts – Ideal for comparing counts or proportions across different categories.\nScatter Plots – Useful for evaluating relationships between two numerical variables.\nBoxplots – Effective for visualizing data distributions, identifying outliers, and comparing variability across groups.\nLine Graphs – Best suited for tracking trends over time and analyzing patterns in sequential data.\nGraphs are essential for summarizing and communicating data effectively. By selecting the appropriate visualization—whether a histogram, bar chart, scatter plot, boxplot, line graph, or other relevant visual—you can reveal patterns, highlight trends, and support informed decision-making. Mastering these tools enhances clarity, accuracy, and the overall impact of statistical analyses, making data-driven insights more accessible and actionable."
   }
 ]

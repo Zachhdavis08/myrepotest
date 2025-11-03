@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Posts – My Quarto Site</title>
+<title>Introduction to Data Types – My Quarto Site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,65 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -139,9 +79,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">My Quarto Site</span>
     </a>
   </div>
@@ -152,11 +92,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -176,7 +116,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Posts</h1>
+<h1 class="title">Introduction to Data Types</h1>
 </div>
 
 
@@ -193,73 +133,137 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome</p>
+<p>While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical.</p>
+<section id="categorical-data-qualitative" class="level2">
+<h2 class="anchored" data-anchor-id="categorical-data-qualitative">Categorical Data (Qualitative):</h2>
+<p>Categorical data represent characteristics or qualities that are often used to group objects. These values are mostly labels or categories and cannot be measured in a numerical value.</p>
+<section id="examples-of-categorical-data" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-categorical-data">Examples of Categorical Data:</h3>
+<p>Color: Red, Blue, Green, etc.</p>
+<p>City: Philadelphia, New York City, Los Angeles</p>
+<p>Blood Type: A, B, AB, O</p>
+<p>Looking further into categorical data, there are two types: Nominal Data and Ordinal Data. The sole difference between the two is whether they are ordered, with Nominal data following no order while Ordinal Data is ordered.</p>
+</section>
+<section id="examples-of-nominal-data-no-order" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-nominal-data-no-order">Examples of Nominal Data (No Order):</h3>
+<p>Marital Status: Single, Married, Divorced, Widowed</p>
+<p>Eye Color: Brown, Green, Blue, Hazel</p>
+<p>Car Brand: Toyota, Subaru, Ford, BMW</p>
+</section>
+<section id="examples-of-ordinal-data-with-order" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-ordinal-data-with-order">Examples of Ordinal Data (With Order):</h3>
+<p>Education Level: High School, Associate’s Degree, Bachelor’s Degree, Master’s Degree, Ph.D.</p>
+<p>Pain Level: Mild, Moderate, Severe</p>
+<p>Job Performance: Poor, Average, Good, Excellent</p>
+</section>
+</section>
+<section id="binary-data" class="level2">
+<h2 class="anchored" data-anchor-id="binary-data">Binary Data</h2>
+<p>There is also a third type of categorical data, however, is treated as a special case, as it does not fall within the other two types of data. This type is called Binary Data, and it can only take on two possible values, often shown in 0’s and 1’s, which translate to True/False or Yes/No.</p>
+<section id="examples-of-binary-data" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-binary-data">Examples of Binary Data:</h3>
+<p>Light Switch: On (1), Off (0)</p>
+<p>Gender: Male (1), Female (0)</p>
+<p>Has a Driver’s License: Yes (1), No (0)</p>
+<p>Pass/Fail: Pass (1), Fail (0)</p>
+</section>
+</section>
+<section id="numerical-data-quantitative" class="level2">
+<h2 class="anchored" data-anchor-id="numerical-data-quantitative">Numerical Data (Quantitative):</h2>
+<p>Numerical Data are values that represent a measurable quantity. These values can be measured or mathematically manipulated.</p>
+<section id="examples-of-numerical-data" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-numerical-data">Examples of Numerical Data:</h3>
+<p>Age (in years): 25, 40, 60, 84</p>
+<p>Income (USD): 35,000, 50,000, 74,000, 102,000</p>
+<p>Weight (lbs.): 134, 183.4, 200.5, 230.1</p>
+<p>Like Categorical Data, there are also two types of numerical data, these being Discrete and Continuous Data. Discrete Data can only take certain distinct values, typically full integers, and there is no continuity between these values. Continuous data is data that can take any value within a set range.</p>
+</section>
+<section id="examples-of-discrete-data" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-discrete-data">Examples of Discrete Data:</h3>
+<p>Number of Children: 0, 1, 2, 3</p>
+<p>Number of Pages in a Book: 120, 300, 400, 565</p>
+<p>Number of Wins of a Sports Teams: 10, 12, 15, 85</p>
+</section>
+<section id="examples-of-continuous-data" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-continuous-data">Examples of Continuous Data:</h3>
+<p>Height (ft.): 5.7, 6.2, 4.11, 7.1</p>
+<p>Temperature (F): 76, 85, 43, 19</p>
+<p>Time (hours): 3.5, 5, 8.2, 12</p>
+</section>
+</section>
+<section id="date-and-time-data" class="level2">
+<h2 class="anchored" data-anchor-id="date-and-time-data">Date and Time Data:</h2>
+<p>These are values that represent points of time or durations. They are often treated slightly differently than categorical and numerical data, but they can still be categorized or measured.</p>
+<section id="examples-of-time-data" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-time-data">Examples of Time Data:</h3>
+<p>Date of Birth: August 11, 2003, 08/11/2003</p>
+<p>Event Timestamp: 10:32 PM, September 20, 2021</p>
+<p>Subscription Duration: 3 months, 6 months, 1 year</p>
+<p>Time Spent on Website: 15 minutes, 12 seconds</p>
+</section>
+</section>
+<section id="statistical-tests-for-data-types" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-tests-for-data-types">Statistical Tests for Data Types:</h2>
+<p>It is important to identify the types of data present, as it acts as a guide to what tests are needed to answer your research questions. In the simplest terms, testing methods can be split up into groups that depend on the combinations of the variable types in the dataset, which can be seen below.</p>
+<section id="why-are-data-types-important-for-choosing-tests" class="level3">
+<h3 class="anchored" data-anchor-id="why-are-data-types-important-for-choosing-tests">“Why are Data Types Important for Choosing Tests?”</h3>
+<p>Data types matter in statistical testing because different types of data alter the assumptions, structure, and interpretation of testing and the results that follow. A brief explanation is that numerical data allows for mathematical operations, allowing for the use of tests that require mean and averages, while categorical data relies on tests that measure frequencies or associations. Examples of different tests for each combination of variable types can be found below:</p>
+</section>
+<section id="numerical-vs.-numerical" class="level3">
+<h3 class="anchored" data-anchor-id="numerical-vs.-numerical">Numerical vs.&nbsp;Numerical:</h3>
+<p>Pearson Correlation:</p>
+<p>Measures the strength and direction of the linear relationship between two continuous variables.</p>
+<p>Spearman Rank Correlation:</p>
+<p>For non-linear relationships between two continuous variables.</p>
+<p>Linear Regression:</p>
+<p>To explore a relationship, using one continuous predictor variable on one response variable.</p>
+</section>
+<section id="numerical-vs.-categorical-two-groups" class="level3">
+<h3 class="anchored" data-anchor-id="numerical-vs.-categorical-two-groups">Numerical vs.&nbsp;Categorical (Two Groups):</h3>
+<section id="t-test" class="level4">
+<h4 class="anchored" data-anchor-id="t-test">T-test:</h4>
+<p>Compares the means for two groups (control vs.&nbsp;treatment).</p>
+<p>Can be split into two categories:</p>
+</section>
+<section id="paired-t-test" class="level4">
+<h4 class="anchored" data-anchor-id="paired-t-test">Paired T-test:</h4>
+<p>When two measurements are taken from the same group.</p>
+</section>
+<section id="independent-t-test" class="level4">
+<h4 class="anchored" data-anchor-id="independent-t-test">Independent T-test:</h4>
+<p>For comparing two independent groups.</p>
+</section>
+<section id="mann-whitney-u-test" class="level4">
+<h4 class="anchored" data-anchor-id="mann-whitney-u-test">Mann-Whitney U Test:</h4>
+<p>Non-parametric test for comparing medians of two independent groups when the data is not normally distributed.</p>
+</section>
+</section>
+<section id="numerical-vs.-categorical-more-than-two-groups" class="level3">
+<h3 class="anchored" data-anchor-id="numerical-vs.-categorical-more-than-two-groups">Numerical vs.&nbsp;Categorical (More Than Two Groups):</h3>
+<section id="anova-analysis-of-variance" class="level4">
+<h4 class="anchored" data-anchor-id="anova-analysis-of-variance">ANOVA (Analysis of Variance):</h4>
+<p>Tests if there is a significant difference between the means of three or more independent groups.</p>
+</section>
+<section id="kruskal-wallis-test" class="level4">
+<h4 class="anchored" data-anchor-id="kruskal-wallis-test">Kruskal-Wallis Test:</h4>
+<p>Non-parametric alternative to ANOVA for comparing medians across multiple groups.</p>
+</section>
+<section id="tukeys-hsd" class="level4">
+<h4 class="anchored" data-anchor-id="tukeys-hsd">Tukey’s HSD:</h4>
+<p>For pairwise comparisons after finding significance in ANOVA testing.</p>
+</section>
+</section>
+<section id="categorical-vs.-categorical" class="level3">
+<h3 class="anchored" data-anchor-id="categorical-vs.-categorical">Categorical vs.&nbsp;Categorical:</h3>
+<p>Chi-Square Test of Independence: Tests the association between two categorical variables. Fisher’s Exact Test: Alternative to Chi-Square Test, however, intended for smaller sample sizes.</p>
+<p>For detailed guides on various statistical tests, including their assumptions and implementation in different software programs, click the link below that leads to the Data Learning Center’s Statistical Guides page.</p>
+<p>DLC Statistical Guides (link)</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1762194617368" data-listing-reading-time-sort="4" data-listing-word-count-sort="770">
-<div class="thumbnail"><a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">Basics to Visualizations</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
-Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1762193488816" data-listing-reading-time-sort="5" data-listing-word-count-sort="879">
-<div class="thumbnail"><a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">Descriptive Statistics</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
-While descriptive statistics are a foundational concept, they have broad applications across various fields of statistics, regardless of the data background. These…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1762194214107" data-listing-reading-time-sort="4" data-listing-word-count-sort="793">
-<div class="thumbnail"><a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">Introduction to Data Types</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
-While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

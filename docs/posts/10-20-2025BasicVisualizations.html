@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Posts – My Quarto Site</title>
+<title>Basics to Visualizations – My Quarto Site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,65 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -139,9 +79,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">My Quarto Site</span>
     </a>
   </div>
@@ -152,11 +92,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -176,7 +116,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Posts</h1>
+<h1 class="title">Basics to Visualizations</h1>
 </div>
 
 
@@ -193,73 +133,81 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome</p>
+<p>Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and researchers can reveal patterns, trends, and relationships that may be hidden in raw numbers. Common visualization tools include histograms, bar charts, and scatter plots, each suited for different types of data and analyses. This document explores these graphs, their applications, and guidance on when to use them effectively.</p>
+<section id="histograms" class="level2">
+<h2 class="anchored" data-anchor-id="histograms">Histograms:</h2>
+<p>A histogram is a graphical representation that organizes a dataset into intervals or “bins.” Each bin represents a range of values, and its height corresponds to the number of observations within that range. Histograms are particularly useful for understanding the distribution of continuous data.</p>
+<section id="when-to-use" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-use">When to Use:</h3>
+<p>To assess the shape of the data distribution (e.g., normal, skewed, or uniform). To detect outliers or unusual data points. To identify multimodal distributions.</p>
+</section>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example:</h3>
+<p>A histogram can be used to analyze the distribution of employee ages in a company. By visualizing age frequencies, patterns such as the concentration of younger employees or a diverse age range may emerge. Below is a created histogram for this scenario:</p>
+</section>
+</section>
+<section id="bar-charts" class="level2">
+<h2 class="anchored" data-anchor-id="bar-charts">Bar Charts:</h2>
+<p>A bar chart displays categorical data using rectangular bars. Each bar’s length represents the frequency or proportion of observations in a category. Unlike histograms, bar charts are used for discrete data and do not display intervals.</p>
+<section id="when-to-use-1" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-use-1">When to Use:</h3>
+<p>To compare counts or proportions across categories. To highlight differences between groups or segments. To visualize survey results or other categorical datasets.</p>
+</section>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example:</h3>
+<p>A bar chart can illustrate the number of students in different academic programs, such as engineering, business, and arts. This visualization helps compare the popularity of each program. The resulting bar chart is provided below:</p>
+</section>
+</section>
+<section id="scatter-plots" class="level2">
+<h2 class="anchored" data-anchor-id="scatter-plots">Scatter Plots:</h2>
+<p>A scatter plot shows the relationship between two continuous variables. Each point represents an observation, with its position determined by the values of the two variables. Scatter plots are particularly effective for identifying correlations or patterns.</p>
+<section id="when-to-use-2" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-use-2">When to Use:</h3>
+<p>To explore the relationship or correlation between two variables. To detect clusters, trends, or outliers. To evaluate the strength and direction of a relationship.</p>
+</section>
+<section id="example-2" class="level3">
+<h3 class="anchored" data-anchor-id="example-2">Example:</h3>
+<p>A scatter plot can be used to analyze the relationship between marketing spend and sales revenue. A positive trend may suggest that increased marketing efforts lead to higher sales. An example of a scatterplot can be viewed below:</p>
+</section>
+</section>
+<section id="boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="boxplots">Boxplots:</h2>
+<p>A boxplot is a graphical representation of the distribution of a dataset. It summarizes key statistics, including the median, quartiles, and potential outliers. The box represents the interquartile range (IQR), while the whiskers extend to the smallest and largest non-outlier values.</p>
+<section id="when-to-use-3" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-use-3">When to Use:</h3>
+<p>To visualize the spread and variability of data. To detect outliers in a dataset. To compare distributions across multiple groups.</p>
+</section>
+<section id="example-3" class="level3">
+<h3 class="anchored" data-anchor-id="example-3">Example:</h3>
+<p>A boxplot can be used to analyze the distribution of salaries in different job departments. By comparing salary distributions in IT, HR, Finance, and other departments, companies can assess pay disparities and variations within teams. A side-by-side boxplot of this scenario is shown below:</p>
+</section>
+</section>
+<section id="line-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="line-graphs">Line Graphs:</h2>
+<p>A line graph effectively visualizes trends over time by connecting data points with a continuous line, making it easier to identify patterns, fluctuations, and long-term changes. While like a scatter plot, a line graph is particularly useful for highlighting trends and showing the progression of data over time. However, line graphs have a more specialized use and are most relevant in specific areas of statistical analysis, such as time-series data and trend forecasting.</p>
+<section id="when-to-use-4" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-use-4">When to Use:</h3>
+<p>To track changes over a period (e.g., daily, monthly, and yearly trends). To compare multiple trends in a single graph. To identify seasonal patterns or cyclical behavior.</p>
+</section>
+<section id="example-4" class="level3">
+<h3 class="anchored" data-anchor-id="example-4">Example:</h3>
+<p>A line graph can be used to analyze monthly sales revenue over a year. By plotting sales data for each month, businesses can identify peak seasons, declining trends, or the impact of marketing campaigns. Below is a line graph of our scenario:</p>
+</section>
+</section>
+<section id="choosing-the-right-graph" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-the-right-graph">Choosing the Right Graph:</h2>
+<p>Selecting the appropriate graph depends on the nature of your data and the insights you want to gain:</p>
+<p>Histograms – Best for understanding distributions and variability within a single dataset.</p>
+<p>Bar Charts – Ideal for comparing counts or proportions across different categories.</p>
+<p>Scatter Plots – Useful for evaluating relationships between two numerical variables.</p>
+<p>Boxplots – Effective for visualizing data distributions, identifying outliers, and comparing variability across groups.</p>
+<p>Line Graphs – Best suited for tracking trends over time and analyzing patterns in sequential data.</p>
+<p>Graphs are essential for summarizing and communicating data effectively. By selecting the appropriate visualization—whether a histogram, bar chart, scatter plot, boxplot, line graph, or other relevant visual—you can reveal patterns, highlight trends, and support informed decision-making. Mastering these tools enhances clarity, accuracy, and the overall impact of statistical analyses, making data-driven insights more accessible and actionable.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1762194617368" data-listing-reading-time-sort="4" data-listing-word-count-sort="770">
-<div class="thumbnail"><a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">Basics to Visualizations</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
-Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/10-20-2025BasicVisualizations.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1762193488816" data-listing-reading-time-sort="5" data-listing-word-count-sort="879">
-<div class="thumbnail"><a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">Descriptive Statistics</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
-While descriptive statistics are a foundational concept, they have broad applications across various fields of statistics, regardless of the data background. These…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/10-20-2025DescrptiveStatistics.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1762194214107" data-listing-reading-time-sort="4" data-listing-word-count-sort="793">
-<div class="thumbnail"><a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">Introduction to Data Types</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
-While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/10-20-2025IntroToDataTypes.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
