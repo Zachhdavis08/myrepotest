@@ -1,0 +1,83 @@
+---
+title: "Basics to Visualizations"
+format: html
+editor: visual
+---
+
+Visualizing data is an essential part of the statistical process and plays a major role in Exploratory Data Analysis (EDA). By representing data visually, analysts and researchers can reveal patterns, trends, and relationships that may be hidden in raw numbers. Common visualization tools include histograms, bar charts, and scatter plots, each suited for different types of data and analyses. This document explores these graphs, their applications, and guidance on when to use them effectively.
+
+## Histograms:
+
+A histogram is a graphical representation that organizes a dataset into intervals or "bins." Each bin represents a range of values, and its height corresponds to the number of observations within that range. Histograms are particularly useful for understanding the distribution of continuous data.
+
+### When to Use:
+
+To assess the shape of the data distribution (e.g., normal, skewed, or uniform). To detect outliers or unusual data points. To identify multimodal distributions.
+
+### Example:
+
+A histogram can be used to analyze the distribution of employee ages in a company. By visualizing age frequencies, patterns such as the concentration of younger employees or a diverse age range may emerge. Below is a created histogram for this scenario:
+
+## Bar Charts:
+
+A bar chart displays categorical data using rectangular bars. Each bar's length represents the frequency or proportion of observations in a category. Unlike histograms, bar charts are used for discrete data and do not display intervals.
+
+### When to Use:
+
+To compare counts or proportions across categories. To highlight differences between groups or segments. To visualize survey results or other categorical datasets.
+
+### Example:
+
+A bar chart can illustrate the number of students in different academic programs, such as engineering, business, and arts. This visualization helps compare the popularity of each program. The resulting bar chart is provided below:
+
+## Scatter Plots:
+
+A scatter plot shows the relationship between two continuous variables. Each point represents an observation, with its position determined by the values of the two variables. Scatter plots are particularly effective for identifying correlations or patterns.
+
+### When to Use:
+
+To explore the relationship or correlation between two variables. To detect clusters, trends, or outliers. To evaluate the strength and direction of a relationship.
+
+### Example:
+
+A scatter plot can be used to analyze the relationship between marketing spend and sales revenue. A positive trend may suggest that increased marketing efforts lead to higher sales. An example of a scatterplot can be viewed below:
+
+## Boxplots:
+
+A boxplot is a graphical representation of the distribution of a dataset. It summarizes key statistics, including the median, quartiles, and potential outliers. The box represents the interquartile range (IQR), while the whiskers extend to the smallest and largest non-outlier values.
+
+### When to Use:
+
+To visualize the spread and variability of data. To detect outliers in a dataset. To compare distributions across multiple groups.
+
+### Example:
+
+A boxplot can be used to analyze the distribution of salaries in different job departments. By comparing salary distributions in IT, HR, Finance, and other departments, companies can assess pay disparities and variations within teams. A side-by-side boxplot of this scenario is shown below:
+
+## Line Graphs:
+
+A line graph effectively visualizes trends over time by connecting data points with a continuous line, making it easier to identify patterns, fluctuations, and long-term changes. While like a scatter plot, a line graph is particularly useful for highlighting trends and showing the progression of data over time. However, line graphs have a more specialized use and are most relevant in specific areas of statistical analysis, such as time-series data and trend forecasting.
+
+### When to Use:
+
+To track changes over a period (e.g., daily, monthly, and yearly trends). To compare multiple trends in a single graph. To identify seasonal patterns or cyclical behavior.
+
+### Example:
+
+A line graph can be used to analyze monthly sales revenue over a year. By plotting sales data for each month, businesses can identify peak seasons, declining trends, or the impact of marketing campaigns. Below is a line graph of our scenario:
+
+## Choosing the Right Graph:
+
+Selecting the appropriate graph depends on the nature of your data and the insights you want to gain:
+
+Histograms – Best for understanding distributions and variability within a single dataset.
+
+Bar Charts – Ideal for comparing counts or proportions across different categories.
+
+Scatter Plots – Useful for evaluating relationships between two numerical variables.
+
+Boxplots – Effective for visualizing data distributions, identifying outliers, and comparing variability across groups.
+
+Line Graphs – Best suited for tracking trends over time and analyzing patterns in sequential data.
+
+Graphs are essential for summarizing and communicating data effectively. By selecting the appropriate visualization—whether a histogram, bar chart, scatter plot, boxplot, line graph, or other relevant visual—you can reveal patterns, highlight trends, and support informed decision-making. Mastering these tools enhances clarity, accuracy, and the overall impact of statistical analyses, making data-driven insights more accessible and actionable.

@@ -1,0 +1,115 @@
+---
+title: "Descriptive Statistics"
+format: html
+editor: visual
+---
+
+While descriptive statistics are a foundational concept, they have broad applications across various fields of statistics, regardless of the data background. These statistics are essential for summarizing and organizing data, providing a clearer understanding of central tendencies, variability, and distribution. Key measures such as mean, median, mode, and standard deviation offer fundamental insights into data patterns and behavior. Despite their simplicity, these measures are often overlooked, yet they play a crucial role in data analysis. When properly utilized, descriptive statistics can uncover trends, highlight inconsistencies (outliers), and provide valuable context for decision-making and deeper statistical exploration. They also serve as a fundamental component of Exploratory Data Analysis (EDA), helping analysts identify patterns before applying more complex techniques.
+
+## Mean (Average)
+
+The mean, also referred to as the average of data, is calculated by summing all data values in a dataset and dividing by the total number of values. It provides a central value for the data and is widely used due to its simplicity in calculating and interpretation. For example, when analyzing the average income of a population, the mean can highlight general economic trends. However, one of the major implications when using the average of a data set is its sensitivity to extreme values (outliers), which can skew the results and provide a misleading representation of a sample population.
+
+### Formulas
+
+#### Population Mean
+
+$$µ = \frac{Σx}{N}$$
+
+where
+
+is the sum of all values within a population, and
+
+is the number of observations within a population.
+
+#### Sample Mean
+
+where
+
+is the sum of all values within a sample, and
+
+is the number of observations within a sample.
+
+In general, the sample mean is calculated more frequently in statistics due to the difficulty of obtaining data for an entire population, and since datasets are usually a sample of any given population.
+
+### Interpretation
+
+Interpreting the mean is very simple; a high mean indicates a high central tendency, while a low mean indicates a lower concentration of values, assuming there are no outliers observed in a set of data.
+
+## Median
+
+The median is the middle value in a sorted dataset. Unlike the mean, the median is resistant to outliers, making it a better measure of central tendency for skewed data. For instance, in a dataset of home prices, the median provides a more accurate depiction of the typical home cost when a few luxury properties distort the mean.
+
+### How to Calculate by Hand
+
+Arrange the data in ascending order.
+
+If the number of observations () is odd, the median is the middle value.
+
+If is even, the median is the average of the two middle values.
+
+In statistical programming, such as R, the median is often favored for skewed datasets or when outliers are present. Many functions within software default to using the median for robust analysis due to its resistance to extreme values.
+
+### Interpretation
+
+The median reflects the point at which 50% of the data falls below and 50% falls above, which, while it is like the mean, the median provides the exact middle value of the data, disregarding skews and outliers.
+
+## Mode
+
+The mode is the value that appears most frequently in a dataset. It is particularly useful for categorical data, where calculating a mean or median may not be appropriate. For example, in survey results, the mode can identify the most common preference or choice among respondents. This is also the easiest measure to find, as no calculations are required.
+
+### Interpretation
+
+A data set can be unimodal (one mode), bimodal (two modes), or multimodal (multiple modes). The mode provides insights into the frequency distribution of the data.
+
+## Standard Deviation
+
+The standard deviation measures the dispersion or spread of data around the mean. A small standard deviation indicates that the data points are close to the mean, while a large standard deviation suggests significant variability.
+
+### Formulas
+
+#### Population Standard Deviation:
+
+where
+
+represents the specific elements in a population,
+
+represents the population mean, and
+
+is the population size.
+
+#### Sample Standard Deviation:
+
+where
+
+represents the specific elements in a sample,
+
+represents the sample mean, and
+
+is the sample size.
+
+Similarly to the mean, the sample standard deviation is the more common form, as finding the population standard deviation would be extremely difficult due to the sizes of general populations.
+
+### Interpretation
+
+A high standard deviation indicates greater variability, which may suggest heterogeneity or diverse elements within a data set. For example, in test scores, a low standard deviation means most students scored similarly, whereas a high standard deviation indicates a wider range of performance levels, which could be due to other existing factors.
+
+## Advanced Uses and Interpretation
+
+### Comparing Data Sets
+
+Descriptive statistics allow researchers to compare data sets effectively. For instance, comparing the means and standard deviations of two groups can highlight significant differences or similarities.
+
+### Identifying Trends
+
+The mean and standard deviation are often used to track trends over time, such as changes in stock prices or population growth.
+
+### Understanding Data Distributions
+
+Descriptive measures help identify whether the data follows a normal distribution or exhibits skewness and kurtosis. This understanding is crucial for selecting appropriate statistical tests.
+
+### Quality Control
+
+In manufacturing industries, standard deviation is essential for quality control processes, ensuring product consistency.
+
+Descriptive statistics serve as the foundation for understanding and interpreting data in any statistical analysis. The mean, median, mode, and standard deviation provide valuable insights into central tendency and variability, making them indispensable tools for summarizing and analyzing data. By mastering these measures, researchers and analysts can uncover meaningful patterns and trends, enabling informed decision-making across various fields.

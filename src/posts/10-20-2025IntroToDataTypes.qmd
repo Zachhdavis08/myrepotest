@@ -1,0 +1,159 @@
+---
+title: "Introduction to Data Types"
+format: html
+editor: visual
+---
+
+While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical.
+
+## Categorical Data (Qualitative):
+
+Categorical data represent characteristics or qualities that are often used to group objects. These values are mostly labels or categories and cannot be measured in a numerical value.
+
+### Examples of Categorical Data:
+
+Color: Red, Blue, Green, etc.
+
+City: Philadelphia, New York City, Los Angeles
+
+Blood Type: A, B, AB, O
+
+Looking further into categorical data, there are two types: Nominal Data and Ordinal Data. The sole difference between the two is whether they are ordered, with Nominal data following no order while Ordinal Data is ordered.
+
+### Examples of Nominal Data (No Order):
+
+Marital Status: Single, Married, Divorced, Widowed
+
+Eye Color: Brown, Green, Blue, Hazel
+
+Car Brand: Toyota, Subaru, Ford, BMW
+
+### Examples of Ordinal Data (With Order):
+
+Education Level: High School, Associate’s Degree, Bachelor’s Degree, Master’s Degree, Ph.D.
+
+Pain Level: Mild, Moderate, Severe
+
+Job Performance: Poor, Average, Good, Excellent
+
+## Binary Data
+
+There is also a third type of categorical data, however, is treated as a special case, as it does not fall within the other two types of data. This type is called Binary Data, and it can only take on two possible values, often shown in 0’s and 1’s, which translate to True/False or Yes/No.
+
+### Examples of Binary Data:
+
+Light Switch: On (1), Off (0)
+
+Gender: Male (1), Female (0)
+
+Has a Driver’s License: Yes (1), No (0)
+
+Pass/Fail: Pass (1), Fail (0)
+
+## Numerical Data (Quantitative):
+
+Numerical Data are values that represent a measurable quantity. These values can be measured or mathematically manipulated.
+
+### Examples of Numerical Data:
+
+Age (in years): 25, 40, 60, 84
+
+Income (USD): 35,000, 50,000, 74,000, 102,000
+
+Weight (lbs.): 134, 183.4, 200.5, 230.1
+
+Like Categorical Data, there are also two types of numerical data, these being Discrete and Continuous Data. Discrete Data can only take certain distinct values, typically full integers, and there is no continuity between these values. Continuous data is data that can take any value within a set range.
+
+### Examples of Discrete Data:
+
+Number of Children: 0, 1, 2, 3
+
+Number of Pages in a Book: 120, 300, 400, 565
+
+Number of Wins of a Sports Teams: 10, 12, 15, 85
+
+### Examples of Continuous Data:
+
+Height (ft.): 5.7, 6.2, 4.11, 7.1
+
+Temperature (F): 76, 85, 43, 19
+
+Time (hours): 3.5, 5, 8.2, 12
+
+## Date and Time Data:
+
+These are values that represent points of time or durations. They are often treated slightly differently than categorical and numerical data, but they can still be categorized or measured.
+
+### Examples of Time Data:
+
+Date of Birth: August 11, 2003, 08/11/2003
+
+Event Timestamp: 10:32 PM, September 20, 2021
+
+Subscription Duration: 3 months, 6 months, 1 year
+
+Time Spent on Website: 15 minutes, 12 seconds
+
+## Statistical Tests for Data Types:
+
+It is important to identify the types of data present, as it acts as a guide to what tests are needed to answer your research questions. In the simplest terms, testing methods can be split up into groups that depend on the combinations of the variable types in the dataset, which can be seen below.
+
+### “Why are Data Types Important for Choosing Tests?”
+
+Data types matter in statistical testing because different types of data alter the assumptions, structure, and interpretation of testing and the results that follow. A brief explanation is that numerical data allows for mathematical operations, allowing for the use of tests that require mean and averages, while categorical data relies on tests that measure frequencies or associations. Examples of different tests for each combination of variable types can be found below:
+
+### Numerical vs. Numerical:
+
+Pearson Correlation:
+
+Measures the strength and direction of the linear relationship between two continuous variables.
+
+Spearman Rank Correlation:
+
+For non-linear relationships between two continuous variables.
+
+Linear Regression:
+
+To explore a relationship, using one continuous predictor variable on one response variable.
+
+### Numerical vs. Categorical (Two Groups):
+
+#### T-test:
+
+Compares the means for two groups (control vs. treatment).
+
+Can be split into two categories:
+
+#### Paired T-test:
+
+When two measurements are taken from the same group.
+
+#### Independent T-test:
+
+For comparing two independent groups.
+
+#### Mann-Whitney U Test:
+
+Non-parametric test for comparing medians of two independent groups when the data is not normally distributed.
+
+### Numerical vs. Categorical (More Than Two Groups):
+
+#### ANOVA (Analysis of Variance):
+
+Tests if there is a significant difference between the means of three or more independent groups.
+
+#### Kruskal-Wallis Test:
+
+Non-parametric alternative to ANOVA for comparing medians across multiple groups.
+
+#### Tukey’s HSD:
+
+For pairwise comparisons after finding significance in ANOVA testing.
+
+### Categorical vs. Categorical:
+
+Chi-Square Test of Independence: Tests the association between two categorical variables. Fisher’s Exact Test: Alternative to Chi-Square Test, however, intended for smaller sample sizes.
+
+For detailed guides on various statistical tests, including their assumptions and implementation in different software programs, click the link below that leads to the Data Learning Center’s Statistical Guides page.
+
+DLC Statistical Guides (link)

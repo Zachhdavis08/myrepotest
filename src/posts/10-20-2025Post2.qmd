@@ -1,7 +1,0 @@
----
-title: "Post2"
-format: html
-editor: visual
----
-
-This is Post2
