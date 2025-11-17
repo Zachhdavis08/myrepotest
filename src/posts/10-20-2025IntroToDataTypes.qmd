@@ -9,7 +9,7 @@ categories:
   - Interpretation
 ---
 
-While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical.
+While working with data, it is important to understand the types of data ou a   re working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical.
 
 ## Categorical Data (Qualitative):
 
