@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "Welcome - Test Page\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasics to Visualizations\n\n\n\nVisualization\n\nGraphing\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDescriptive Statistics\n\n\n\nInterpretation\n\nFormula\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Types\n\n\n\nData Types\n\nStatistical Tests\n\nInterpretation\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Welcome - Test Page\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization: Best Practices and Pitfalls to Avoid\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasics to Visualizations\n\n\n\nVisualization\n\nGraphing\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDescriptive Statistics\n\n\n\nInterpretation\n\nFormula\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Types\n\n\n\nData Types\n\nStatistical Tests\n\nInterpretation\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/10-20-2025Post2.html",
@@ -81,7 +81,7 @@
     "href": "posts/10-20-2025IntroToDataTypes.html",
     "title": "Introduction to Data Types",
     "section": "",
-    "text": "While working with data, it is important to understand the types of data you are working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical."
+    "text": "While working with data, it is important to understand the types of data ou a re working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical."
   },
   {
     "objectID": "posts/10-20-2025IntroToDataTypes.html#categorical-data-qualitative",
@@ -166,5 +166,82 @@
     "title": "Basics to Visualizations",
     "section": "Choosing the Right Graph:",
     "text": "Choosing the Right Graph:\nSelecting the appropriate graph depends on the nature of your data and the insights you want to gain:\nHistograms – Best for understanding distributions and variability within a single dataset.\nBar Charts – Ideal for comparing counts or proportions across different categories.\nScatter Plots – Useful for evaluating relationships between two numerical variables.\nBoxplots – Effective for visualizing data distributions, identifying outliers, and comparing variability across groups.\nLine Graphs – Best suited for tracking trends over time and analyzing patterns in sequential data.\nGraphs are essential for summarizing and communicating data effectively. By selecting the appropriate visualization—whether a histogram, bar chart, scatter plot, boxplot, line graph, or other relevant visual—you can reveal patterns, highlight trends, and support informed decision-making. Mastering these tools enhances clarity, accuracy, and the overall impact of statistical analyses, making data-driven insights more accessible and actionable."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html",
+    "href": "posts/11-05-2025DataVisualizationPractices.html",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "",
+    "text": "Data visualization is a powerful tool that transforms raw data into meaningful insights. When done correctly, it enhances understanding, supports decision-making, and effectively communicates complex information. However, poorly designed visuals can mislead audiences, obscure key findings, and even distort the truth.\nThis guide outlines essential rules for creating clear, accurate, and impactful visualizations. These practices will help you craft compelling visuals that engage your audience and convey data with precision. Whether you’re a business analyst, researcher, or student, following these commonly used principles will ensure that your visual storytelling is both effective and ethical."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#know-your-audience",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#know-your-audience",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "1. Know Your Audience",
+    "text": "1. Know Your Audience\nBefore creating a visualization, consider who will view it and what they need to take away from it. A well-designed visualization should be clear, accessible, and suited to the audience’s level of expertise.\nUnderstand Their Background\nAre they data experts who can interpret complex charts, or will simpler visuals be more effective? Do they have prior knowledge of the topic, or will they need additional context to understand the data?\nWhat Level of Detail Do They Need?\nAre they looking for a quick summary of key insights, or do they need an in-depth breakdown of trends and relationships? Should your visualization highlight broad trends, or should it offer interactive elements for deeper exploration?\nConsider the Presentation Format\nPrint (reports, posters): Ensure text is legible, colors are distinct, and the design is clear at different sizes. Digital (slides, dashboards, websites): Interactive elements, animations, and tooltips can make complex data easier to explore. Accessibility: Use colorblind-friendly patterns, readable fonts, and text descriptions for those using technology to follow along.\nBy tailoring your visualization to your audience’s needs and the format in which they will see it, you can make your data more effective and impactful."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#choose-the-right-chart-type",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#choose-the-right-chart-type",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "2. Choose the Right Chart Type",
+    "text": "2. Choose the Right Chart Type\nDifferent types of data require different visualizations:\nBar Charts – Compare different categories easily Line Charts – Show trends over time Scatter Plots – Display relationships between variables Histograms – Understand the distribution of a dataset Stacked Bar Charts – Show part-to-whole relationships over time Maps – Best for geographic data\nSpecific examples of widely used charts can be found on our previous post, “Basics to Visualizations” on our Data Points Blog, which is linked here.\nIn general – Try to avoid pie charts when comparing multiple categories—bar charts are usually better!"
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#make-it-easy-to-read",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#make-it-easy-to-read",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "3. Make It Easy to Read",
+    "text": "3. Make It Easy to Read\nA cluttered chart is a useless chart. Keep your design clean by:\nUsing clear labels and legends Keeping colors consistent and purposeful (Most visuals only use 3-5 colors!) Choosing legible font size Using Gridlines to help show differences\nIf people have to decode your chart instead of instantly understanding it, it’s not effective.\nHere is an example of an easy-to-read graph:\nOutput image The graph features a clear title, gridlines, labeled axes, well-defined categories, and limits usage of color, ensuring viewers can easily understand the data and its interpretation."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#highlight-key-insights",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#highlight-key-insights",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "4. Highlight Key Insights",
+    "text": "4. Highlight Key Insights\nUse color, bold text, or callouts to emphasize the most important takeaways. The goal isn’t just to show data—it’s to make the key message unmissable.\nExample: Instead of just showing sales data, add a note saying, “Sales increased by 20% in Q4 due to a successful holiday campaign.”\nOutput image Building from point 3, point 4 emphasizes key insights using color, annotations, and callouts to make the most important takeaways stand out. However, it’s important to note that step 4 does not always need to be visually represented. Key findings can also be highlighted through textual analysis in a caption for a project or presentation. That said, visualizing these insights is a powerful way to enhance a project and improve audience understanding."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#ensure-data-accuracy",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#ensure-data-accuracy",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "5. Ensure Data Accuracy",
+    "text": "5. Ensure Data Accuracy\nMisinformation spreads quickly, especially with bad visuals.\nAlways start your Y-axis at zero unless there’s a good reason not to. Use proportional scales to avoid distorting comparisons. Double-check numbers to avoid misleading insights.\nBy applying these practices to your work, you can create data visualizations that are not only visually appealing but also meaningful and effective. Clear, well-designed visuals ensure that your audience can quickly grasp key insights, make informed decisions, and trust the data being presented. When used correctly, data visualization becomes a powerful storytelling tool—turning raw numbers into impactful narratives."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#dont-use-misleading-scales",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#dont-use-misleading-scales",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "1. Don’t Use Misleading Scales",
+    "text": "1. Don’t Use Misleading Scales\nA truncated Y-axis (one that doesn’t start at zero) can exaggerate trends, making small changes look dramatic.\nExample: Look at these two side by side charts showing the same data:\nChart A (Misleading): Starts Y-axis at 50, making a small increase look huge. Chart B (Correct): Starts Y-axis at 0, showing a realistic growth pattern.\nOutput image Remember to always ensure your visuals represent the true scale of the data."
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#dont-overcomplicate-your-charts",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#dont-overcomplicate-your-charts",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "2. Don’t Overcomplicate Your Charts",
+    "text": "2. Don’t Overcomplicate Your Charts\nAvoid 3D charts, excessive colors, or too many overlapping elements. Simplicity is key.\nBad: A pie chart with 10+ segments—nobody can compare them easily, even with proper labeling. Better: A bar chart with sorted categories for clarity.\nOutput image"
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#dont-ignore-labels-and-context",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#dont-ignore-labels-and-context",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "3. Don’t Ignore Labels and Context",
+    "text": "3. Don’t Ignore Labels and Context\nA graph without labels is like a story without words, so make sure to use label!\nBad: A scatter plot with no axis labels. Good: A clear title, labeled axes, and depending on it’s purpose, a short insight description.\nOutput image"
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#dont-use-too-many-colors",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#dont-use-too-many-colors",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "4. Don’t Use Too Many Colors",
+    "text": "4. Don’t Use Too Many Colors\nUsing a rainbow of colors may look exciting, but it often confuses readers.\nUse a consistent color scheme (e.g., shades of blue throughout, red to highlight a key point).\nAlways Highlight important points with contrast, not chaos.\nOutput image"
+  },
+  {
+    "objectID": "posts/11-05-2025DataVisualizationPractices.html#dont-forget-to-verify-your-data",
+    "href": "posts/11-05-2025DataVisualizationPractices.html#dont-forget-to-verify-your-data",
+    "title": "Data Visualization: Best Practices and Pitfalls to Avoid",
+    "section": "5. Don’t Forget to Verify Your Data",
+    "text": "5. Don’t Forget to Verify Your Data\nMistakes happen. Before publishing your visualization, ask yourself:\nAre the numbers correct? Do the colors and labels make sense? Is the story accurate and unbiased?\nAlways remember – A great visualization is only as good as the data behind it.\nAt its core, data visualization is about telling a story. A great chart removes confusion, highlights key insights, and engages the audience.\nBy following these practices and avoiding common mistakes, you can create aesthetically pleasing and effective visuals—regardless of what field you find yourself in."
   }
 ]

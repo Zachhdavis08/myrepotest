@@ -1,26 +1,117 @@
 ---
-title: "11-5-2025DataVisualizationPractices"
+title: "Data Visualization: Best Practices and Pitfalls to Avoid"
 format: html
 editor: visual
 ---
 
-## Quarto
+Data visualization is a powerful tool that transforms raw data into meaningful insights. When done correctly, it enhances understanding, supports decision-making, and effectively communicates complex information. However, poorly designed visuals can mislead audiences, obscure key findings, and even distort the truth.
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This guide outlines essential rules for creating clear, accurate, and impactful visualizations. These practices will help you craft compelling visuals that engage your audience and convey data with precision. Whether you're a business analyst, researcher, or student, following these commonly used principles will ensure that your visual storytelling is both effective and ethical.
 
-## Running Code
+# Best Practices to Create Better Visualizations:
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## 1. Know Your Audience
 
-```{r}
-1 + 1
-```
+Before creating a visualization, consider who will view it and what they need to take away from it. A well-designed visualization should be clear, accessible, and suited to the audience’s level of expertise.
 
-You can add options to executable code like this
+Understand Their Background
 
-```{r}
-#| echo: false
-2 * 2
-```
+Are they data experts who can interpret complex charts, or will simpler visuals be more effective? Do they have prior knowledge of the topic, or will they need additional context to understand the data?
 
-The `echo: false` option disables the printing of code (only output is displayed).
+What Level of Detail Do They Need?
+
+Are they looking for a quick summary of key insights, or do they need an in-depth breakdown of trends and relationships? Should your visualization highlight broad trends, or should it offer interactive elements for deeper exploration?
+
+Consider the Presentation Format
+
+Print (reports, posters): Ensure text is legible, colors are distinct, and the design is clear at different sizes. Digital (slides, dashboards, websites): Interactive elements, animations, and tooltips can make complex data easier to explore. Accessibility: Use colorblind-friendly patterns, readable fonts, and text descriptions for those using technology to follow along.
+
+By tailoring your visualization to your audience’s needs and the format in which they will see it, you can make your data more effective and impactful.
+
+## 2. Choose the Right Chart Type
+
+Different types of data require different visualizations:
+
+Bar Charts – Compare different categories easily Line Charts – Show trends over time Scatter Plots – Display relationships between variables Histograms – Understand the distribution of a dataset Stacked Bar Charts – Show part-to-whole relationships over time Maps – Best for geographic data
+
+Specific examples of widely used charts can be found on our previous post, “Basics to Visualizations” on our Data Points Blog, which is linked here.
+
+In general – Try to avoid pie charts when comparing multiple categories—bar charts are usually better!
+
+## 3. Make It Easy to Read
+
+A cluttered chart is a useless chart. Keep your design clean by:
+
+Using clear labels and legends Keeping colors consistent and purposeful (Most visuals only use 3-5 colors!) Choosing legible font size Using Gridlines to help show differences
+
+If people have to decode your chart instead of instantly understanding it, it’s not effective.
+
+Here is an example of an easy-to-read graph:
+
+Output image The graph features a clear title, gridlines, labeled axes, well-defined categories, and limits usage of color, ensuring viewers can easily understand the data and its interpretation.
+
+## 4. Highlight Key Insights
+
+Use color, bold text, or callouts to emphasize the most important takeaways. The goal isn’t just to show data—it’s to make the key message unmissable.
+
+Example: Instead of just showing sales data, add a note saying, “Sales increased by 20% in Q4 due to a successful holiday campaign.”
+
+Output image Building from point 3, point 4 emphasizes key insights using color, annotations, and callouts to make the most important takeaways stand out. However, it's important to note that step 4 does not always need to be visually represented. Key findings can also be highlighted through textual analysis in a caption for a project or presentation. That said, visualizing these insights is a powerful way to enhance a project and improve audience understanding.
+
+## 5. Ensure Data Accuracy
+
+Misinformation spreads quickly, especially with bad visuals.
+
+Always start your Y-axis at zero unless there's a good reason not to. Use proportional scales to avoid distorting comparisons. Double-check numbers to avoid misleading insights.
+
+By applying these practices to your work, you can create data visualizations that are not only visually appealing but also meaningful and effective. Clear, well-designed visuals ensure that your audience can quickly grasp key insights, make informed decisions, and trust the data being presented. When used correctly, data visualization becomes a powerful storytelling tool—turning raw numbers into impactful narratives.
+
+# Common Mistakes Made In Data Visualizations:
+
+## 1. Don’t Use Misleading Scales
+
+A truncated Y-axis (one that doesn’t start at zero) can exaggerate trends, making small changes look dramatic.
+
+Example: Look at these two side by side charts showing the same data:
+
+Chart A (Misleading): Starts Y-axis at 50, making a small increase look huge. Chart B (Correct): Starts Y-axis at 0, showing a realistic growth pattern.
+
+Output image Remember to always ensure your visuals represent the true scale of the data.
+
+## 2. Don’t Overcomplicate Your Charts
+
+Avoid 3D charts, excessive colors, or too many overlapping elements. Simplicity is key.
+
+Bad: A pie chart with 10+ segments—nobody can compare them easily, even with proper labeling. Better: A bar chart with sorted categories for clarity.
+
+Output image
+
+## 3. Don’t Ignore Labels and Context
+
+A graph without labels is like a story without words, so make sure to use label!
+
+Bad: A scatter plot with no axis labels. Good: A clear title, labeled axes, and depending on it's purpose, a short insight description.
+
+Output image
+
+## 4. Don’t Use Too Many Colors
+
+Using a rainbow of colors may look exciting, but it often confuses readers.
+
+Use a consistent color scheme (e.g., shades of blue throughout, red to highlight a key point).
+
+Always Highlight important points with contrast, not chaos.
+
+Output image
+
+## 5. Don’t Forget to Verify Your Data
+
+Mistakes happen. Before publishing your visualization, ask yourself:
+
+Are the numbers correct? Do the colors and labels make sense? Is the story accurate and unbiased?
+
+Always remember – A great visualization is only as good as the data behind it.
+
+At its core, data visualization is about telling a story. A great chart removes confusion, highlights key insights, and engages the audience.
+
+By following these practices and avoiding common mistakes, you can create aesthetically pleasing and effective visuals—regardless of what field you find yourself in.

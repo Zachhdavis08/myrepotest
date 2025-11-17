@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-10-20">
 
-<title>Introduction to Data Types – My Quarto Site</title>
+<title>Data Visualization: Best Practices and Pitfalls to Avoid – My Quarto Site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,25 +116,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction to Data Types</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Data Types</div>
-    <div class="quarto-category">Statistical Tests</div>
-    <div class="quarto-category">Interpretation</div>
-  </div>
-  </div>
+<h1 class="title">Data Visualization: Best Practices and Pitfalls to Avoid</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 20, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -145,131 +133,84 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>While working with data, it is important to understand the types of data ou a re working with, as the type often influences analysis and modeling processes. The goal here is to review/introduce different data types, as well as appropriate tests that fit with each type. With that said, there are two main data types: Categorical and Numerical.</p>
-<section id="categorical-data-qualitative" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-data-qualitative">Categorical Data (Qualitative):</h2>
-<p>Categorical data represent characteristics or qualities that are often used to group objects. These values are mostly labels or categories and cannot be measured in a numerical value.</p>
-<section id="examples-of-categorical-data" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-categorical-data">Examples of Categorical Data:</h3>
-<p>Color: Red, Blue, Green, etc.</p>
-<p>City: Philadelphia, New York City, Los Angeles</p>
-<p>Blood Type: A, B, AB, O</p>
-<p>Looking further into categorical data, there are two types: Nominal Data and Ordinal Data. The sole difference between the two is whether they are ordered, with Nominal data following no order while Ordinal Data is ordered.</p>
+<p>Data visualization is a powerful tool that transforms raw data into meaningful insights. When done correctly, it enhances understanding, supports decision-making, and effectively communicates complex information. However, poorly designed visuals can mislead audiences, obscure key findings, and even distort the truth.</p>
+<p>This guide outlines essential rules for creating clear, accurate, and impactful visualizations. These practices will help you craft compelling visuals that engage your audience and convey data with precision. Whether you’re a business analyst, researcher, or student, following these commonly used principles will ensure that your visual storytelling is both effective and ethical.</p>
+<section id="best-practices-to-create-better-visualizations" class="level1">
+<h1>Best Practices to Create Better Visualizations:</h1>
+<section id="know-your-audience" class="level2">
+<h2 class="anchored" data-anchor-id="know-your-audience">1. Know Your Audience</h2>
+<p>Before creating a visualization, consider who will view it and what they need to take away from it. A well-designed visualization should be clear, accessible, and suited to the audience’s level of expertise.</p>
+<p>Understand Their Background</p>
+<p>Are they data experts who can interpret complex charts, or will simpler visuals be more effective? Do they have prior knowledge of the topic, or will they need additional context to understand the data?</p>
+<p>What Level of Detail Do They Need?</p>
+<p>Are they looking for a quick summary of key insights, or do they need an in-depth breakdown of trends and relationships? Should your visualization highlight broad trends, or should it offer interactive elements for deeper exploration?</p>
+<p>Consider the Presentation Format</p>
+<p>Print (reports, posters): Ensure text is legible, colors are distinct, and the design is clear at different sizes. Digital (slides, dashboards, websites): Interactive elements, animations, and tooltips can make complex data easier to explore. Accessibility: Use colorblind-friendly patterns, readable fonts, and text descriptions for those using technology to follow along.</p>
+<p>By tailoring your visualization to your audience’s needs and the format in which they will see it, you can make your data more effective and impactful.</p>
 </section>
-<section id="examples-of-nominal-data-no-order" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-nominal-data-no-order">Examples of Nominal Data (No Order):</h3>
-<p>Marital Status: Single, Married, Divorced, Widowed</p>
-<p>Eye Color: Brown, Green, Blue, Hazel</p>
-<p>Car Brand: Toyota, Subaru, Ford, BMW</p>
+<section id="choose-the-right-chart-type" class="level2">
+<h2 class="anchored" data-anchor-id="choose-the-right-chart-type">2. Choose the Right Chart Type</h2>
+<p>Different types of data require different visualizations:</p>
+<p>Bar Charts – Compare different categories easily Line Charts – Show trends over time Scatter Plots – Display relationships between variables Histograms – Understand the distribution of a dataset Stacked Bar Charts – Show part-to-whole relationships over time Maps – Best for geographic data</p>
+<p>Specific examples of widely used charts can be found on our previous post, “Basics to Visualizations” on our Data Points Blog, which is linked here.</p>
+<p>In general – Try to avoid pie charts when comparing multiple categories—bar charts are usually better!</p>
 </section>
-<section id="examples-of-ordinal-data-with-order" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-ordinal-data-with-order">Examples of Ordinal Data (With Order):</h3>
-<p>Education Level: High School, Associate’s Degree, Bachelor’s Degree, Master’s Degree, Ph.D.</p>
-<p>Pain Level: Mild, Moderate, Severe</p>
-<p>Job Performance: Poor, Average, Good, Excellent</p>
+<section id="make-it-easy-to-read" class="level2">
+<h2 class="anchored" data-anchor-id="make-it-easy-to-read">3. Make It Easy to Read</h2>
+<p>A cluttered chart is a useless chart. Keep your design clean by:</p>
+<p>Using clear labels and legends Keeping colors consistent and purposeful (Most visuals only use 3-5 colors!) Choosing legible font size Using Gridlines to help show differences</p>
+<p>If people have to decode your chart instead of instantly understanding it, it’s not effective.</p>
+<p>Here is an example of an easy-to-read graph:</p>
+<p>Output image The graph features a clear title, gridlines, labeled axes, well-defined categories, and limits usage of color, ensuring viewers can easily understand the data and its interpretation.</p>
 </section>
+<section id="highlight-key-insights" class="level2">
+<h2 class="anchored" data-anchor-id="highlight-key-insights">4. Highlight Key Insights</h2>
+<p>Use color, bold text, or callouts to emphasize the most important takeaways. The goal isn’t just to show data—it’s to make the key message unmissable.</p>
+<p>Example: Instead of just showing sales data, add a note saying, “Sales increased by 20% in Q4 due to a successful holiday campaign.”</p>
+<p>Output image Building from point 3, point 4 emphasizes key insights using color, annotations, and callouts to make the most important takeaways stand out. However, it’s important to note that step 4 does not always need to be visually represented. Key findings can also be highlighted through textual analysis in a caption for a project or presentation. That said, visualizing these insights is a powerful way to enhance a project and improve audience understanding.</p>
 </section>
-<section id="binary-data" class="level2">
-<h2 class="anchored" data-anchor-id="binary-data">Binary Data</h2>
-<p>There is also a third type of categorical data, however, is treated as a special case, as it does not fall within the other two types of data. This type is called Binary Data, and it can only take on two possible values, often shown in 0’s and 1’s, which translate to True/False or Yes/No.</p>
-<section id="examples-of-binary-data" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-binary-data">Examples of Binary Data:</h3>
-<p>Light Switch: On (1), Off (0)</p>
-<p>Gender: Male (1), Female (0)</p>
-<p>Has a Driver’s License: Yes (1), No (0)</p>
-<p>Pass/Fail: Pass (1), Fail (0)</p>
-</section>
-</section>
-<section id="numerical-data-quantitative" class="level2">
-<h2 class="anchored" data-anchor-id="numerical-data-quantitative">Numerical Data (Quantitative):</h2>
-<p>Numerical Data are values that represent a measurable quantity. These values can be measured or mathematically manipulated.</p>
-<section id="examples-of-numerical-data" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-numerical-data">Examples of Numerical Data:</h3>
-<p>Age (in years): 25, 40, 60, 84</p>
-<p>Income (USD): 35,000, 50,000, 74,000, 102,000</p>
-<p>Weight (lbs.): 134, 183.4, 200.5, 230.1</p>
-<p>Like Categorical Data, there are also two types of numerical data, these being Discrete and Continuous Data. Discrete Data can only take certain distinct values, typically full integers, and there is no continuity between these values. Continuous data is data that can take any value within a set range.</p>
-</section>
-<section id="examples-of-discrete-data" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-discrete-data">Examples of Discrete Data:</h3>
-<p>Number of Children: 0, 1, 2, 3</p>
-<p>Number of Pages in a Book: 120, 300, 400, 565</p>
-<p>Number of Wins of a Sports Teams: 10, 12, 15, 85</p>
-</section>
-<section id="examples-of-continuous-data" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-continuous-data">Examples of Continuous Data:</h3>
-<p>Height (ft.): 5.7, 6.2, 4.11, 7.1</p>
-<p>Temperature (F): 76, 85, 43, 19</p>
-<p>Time (hours): 3.5, 5, 8.2, 12</p>
+<section id="ensure-data-accuracy" class="level2">
+<h2 class="anchored" data-anchor-id="ensure-data-accuracy">5. Ensure Data Accuracy</h2>
+<p>Misinformation spreads quickly, especially with bad visuals.</p>
+<p>Always start your Y-axis at zero unless there’s a good reason not to. Use proportional scales to avoid distorting comparisons. Double-check numbers to avoid misleading insights.</p>
+<p>By applying these practices to your work, you can create data visualizations that are not only visually appealing but also meaningful and effective. Clear, well-designed visuals ensure that your audience can quickly grasp key insights, make informed decisions, and trust the data being presented. When used correctly, data visualization becomes a powerful storytelling tool—turning raw numbers into impactful narratives.</p>
 </section>
 </section>
-<section id="date-and-time-data" class="level2">
-<h2 class="anchored" data-anchor-id="date-and-time-data">Date and Time Data:</h2>
-<p>These are values that represent points of time or durations. They are often treated slightly differently than categorical and numerical data, but they can still be categorized or measured.</p>
-<section id="examples-of-time-data" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-time-data">Examples of Time Data:</h3>
-<p>Date of Birth: August 11, 2003, 08/11/2003</p>
-<p>Event Timestamp: 10:32 PM, September 20, 2021</p>
-<p>Subscription Duration: 3 months, 6 months, 1 year</p>
-<p>Time Spent on Website: 15 minutes, 12 seconds</p>
+<section id="common-mistakes-made-in-data-visualizations" class="level1">
+<h1>Common Mistakes Made In Data Visualizations:</h1>
+<section id="dont-use-misleading-scales" class="level2">
+<h2 class="anchored" data-anchor-id="dont-use-misleading-scales">1. Don’t Use Misleading Scales</h2>
+<p>A truncated Y-axis (one that doesn’t start at zero) can exaggerate trends, making small changes look dramatic.</p>
+<p>Example: Look at these two side by side charts showing the same data:</p>
+<p>Chart A (Misleading): Starts Y-axis at 50, making a small increase look huge. Chart B (Correct): Starts Y-axis at 0, showing a realistic growth pattern.</p>
+<p>Output image Remember to always ensure your visuals represent the true scale of the data.</p>
 </section>
+<section id="dont-overcomplicate-your-charts" class="level2">
+<h2 class="anchored" data-anchor-id="dont-overcomplicate-your-charts">2. Don’t Overcomplicate Your Charts</h2>
+<p>Avoid 3D charts, excessive colors, or too many overlapping elements. Simplicity is key.</p>
+<p>Bad: A pie chart with 10+ segments—nobody can compare them easily, even with proper labeling. Better: A bar chart with sorted categories for clarity.</p>
+<p>Output image</p>
 </section>
-<section id="statistical-tests-for-data-types" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-tests-for-data-types">Statistical Tests for Data Types:</h2>
-<p>It is important to identify the types of data present, as it acts as a guide to what tests are needed to answer your research questions. In the simplest terms, testing methods can be split up into groups that depend on the combinations of the variable types in the dataset, which can be seen below.</p>
-<section id="why-are-data-types-important-for-choosing-tests" class="level3">
-<h3 class="anchored" data-anchor-id="why-are-data-types-important-for-choosing-tests">“Why are Data Types Important for Choosing Tests?”</h3>
-<p>Data types matter in statistical testing because different types of data alter the assumptions, structure, and interpretation of testing and the results that follow. A brief explanation is that numerical data allows for mathematical operations, allowing for the use of tests that require mean and averages, while categorical data relies on tests that measure frequencies or associations. Examples of different tests for each combination of variable types can be found below:</p>
+<section id="dont-ignore-labels-and-context" class="level2">
+<h2 class="anchored" data-anchor-id="dont-ignore-labels-and-context">3. Don’t Ignore Labels and Context</h2>
+<p>A graph without labels is like a story without words, so make sure to use label!</p>
+<p>Bad: A scatter plot with no axis labels. Good: A clear title, labeled axes, and depending on it’s purpose, a short insight description.</p>
+<p>Output image</p>
 </section>
-<section id="numerical-vs.-numerical" class="level3">
-<h3 class="anchored" data-anchor-id="numerical-vs.-numerical">Numerical vs.&nbsp;Numerical:</h3>
-<p>Pearson Correlation:</p>
-<p>Measures the strength and direction of the linear relationship between two continuous variables.</p>
-<p>Spearman Rank Correlation:</p>
-<p>For non-linear relationships between two continuous variables.</p>
-<p>Linear Regression:</p>
-<p>To explore a relationship, using one continuous predictor variable on one response variable.</p>
+<section id="dont-use-too-many-colors" class="level2">
+<h2 class="anchored" data-anchor-id="dont-use-too-many-colors">4. Don’t Use Too Many Colors</h2>
+<p>Using a rainbow of colors may look exciting, but it often confuses readers.</p>
+<p>Use a consistent color scheme (e.g., shades of blue throughout, red to highlight a key point).</p>
+<p>Always Highlight important points with contrast, not chaos.</p>
+<p>Output image</p>
 </section>
-<section id="numerical-vs.-categorical-two-groups" class="level3">
-<h3 class="anchored" data-anchor-id="numerical-vs.-categorical-two-groups">Numerical vs.&nbsp;Categorical (Two Groups):</h3>
-<section id="t-test" class="level4">
-<h4 class="anchored" data-anchor-id="t-test">T-test:</h4>
-<p>Compares the means for two groups (control vs.&nbsp;treatment).</p>
-<p>Can be split into two categories:</p>
-</section>
-<section id="paired-t-test" class="level4">
-<h4 class="anchored" data-anchor-id="paired-t-test">Paired T-test:</h4>
-<p>When two measurements are taken from the same group.</p>
-</section>
-<section id="independent-t-test" class="level4">
-<h4 class="anchored" data-anchor-id="independent-t-test">Independent T-test:</h4>
-<p>For comparing two independent groups.</p>
-</section>
-<section id="mann-whitney-u-test" class="level4">
-<h4 class="anchored" data-anchor-id="mann-whitney-u-test">Mann-Whitney U Test:</h4>
-<p>Non-parametric test for comparing medians of two independent groups when the data is not normally distributed.</p>
-</section>
-</section>
-<section id="numerical-vs.-categorical-more-than-two-groups" class="level3">
-<h3 class="anchored" data-anchor-id="numerical-vs.-categorical-more-than-two-groups">Numerical vs.&nbsp;Categorical (More Than Two Groups):</h3>
-<section id="anova-analysis-of-variance" class="level4">
-<h4 class="anchored" data-anchor-id="anova-analysis-of-variance">ANOVA (Analysis of Variance):</h4>
-<p>Tests if there is a significant difference between the means of three or more independent groups.</p>
-</section>
-<section id="kruskal-wallis-test" class="level4">
-<h4 class="anchored" data-anchor-id="kruskal-wallis-test">Kruskal-Wallis Test:</h4>
-<p>Non-parametric alternative to ANOVA for comparing medians across multiple groups.</p>
-</section>
-<section id="tukeys-hsd" class="level4">
-<h4 class="anchored" data-anchor-id="tukeys-hsd">Tukey’s HSD:</h4>
-<p>For pairwise comparisons after finding significance in ANOVA testing.</p>
-</section>
-</section>
-<section id="categorical-vs.-categorical" class="level3">
-<h3 class="anchored" data-anchor-id="categorical-vs.-categorical">Categorical vs.&nbsp;Categorical:</h3>
-<p>Chi-Square Test of Independence: Tests the association between two categorical variables. Fisher’s Exact Test: Alternative to Chi-Square Test, however, intended for smaller sample sizes.</p>
-<p>For detailed guides on various statistical tests, including their assumptions and implementation in different software programs, click the link below that leads to the Data Learning Center’s Statistical Guides page.</p>
-<p>DLC Statistical Guides (link)</p>
+<section id="dont-forget-to-verify-your-data" class="level2">
+<h2 class="anchored" data-anchor-id="dont-forget-to-verify-your-data">5. Don’t Forget to Verify Your Data</h2>
+<p>Mistakes happen. Before publishing your visualization, ask yourself:</p>
+<p>Are the numbers correct? Do the colors and labels make sense? Is the story accurate and unbiased?</p>
+<p>Always remember – A great visualization is only as good as the data behind it.</p>
+<p>At its core, data visualization is about telling a story. A great chart removes confusion, highlights key insights, and engages the audience.</p>
+<p>By following these practices and avoiding common mistakes, you can create aesthetically pleasing and effective visuals—regardless of what field you find yourself in.</p>
 
 
 </section>
