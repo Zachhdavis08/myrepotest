@@ -1,7 +1,11 @@
 ---
 title: "Data Visualization: Best Practices and Pitfalls to Avoid"
+date: 2025-11-05
 format: html
 editor: visual
+categories:
+  - Visualization
+  - Graphing
 ---
 
 Data visualization is a powerful tool that transforms raw data into meaningful insights. When done correctly, it enhances understanding, supports decision-making, and effectively communicates complex information. However, poorly designed visuals can mislead audiences, obscure key findings, and even distort the truth.
